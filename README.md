@@ -1,17 +1,31 @@
-# Javascript
+# Ajax ส่งค่า ID submit แล้ว alert
 
-
-# ตั้งดีเลย์ก่อน Redirect
 ```javascript
-setTimeout(function() {
-                window.location.href = '?page=home';
-            }, 2000);
-```
-# Alert If Check Value
-```javascript
-swal("Thanadon", "Thanadon Kongaknun", "success")
-                    .then((value) => {
-                        location.reload();
-                    });
+$(document).on("click","#submit", function(e){
+        e.preventDefault();
+        alert("click");
+    })
 ```
 
+# Ajax ส่งค่า ID submit แล้ว alert
+
+```javascript
+
+$(document).on("click", "#package1", function(e) {
+        e.preventDefault();
+
+        var username = $("#username").val();
+        var password = $("#password").val();
+
+        $.ajax({
+            url: "",
+            type: "post",
+            data: {
+                username:username,
+                password:password,
+            },
+        })
+
+    })
+
+```
