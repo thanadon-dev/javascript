@@ -1,5 +1,5 @@
 # Ajax ส่งค่าแล้วเช็ค Response
-```
+```javascript
 $(document).on("click", "#package7", function(e) {
         e.preventDefault();
 
