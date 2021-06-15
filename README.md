@@ -1,3 +1,25 @@
+
+# Realtime อ่อนด๋อย
+```javascript
+<select id="list" onchange="getSelectValue();">
+                            <option value="js">JavaScript</option>
+                            <option value="php">PHP</option>
+                            <option value="c#">Csharp</option>
+                            <option value="java">Java</option>
+                            <option value="node">Node.js</option>
+                        </select>
+                        <script>
+                            function getSelectValue() {
+                                var selectedValue = document.getElementById("list").value;
+                                console.log(selectedValue);
+                                document.getElementById("markno1").innerHTML = selectedValue;
+                            }
+                            getSelectValue();
+                        </script>
+                        <h1 id="markno1"></h1>
+
+```
+
 # Ajax ส่งค่าแล้วเช็ค Response
 ```javascript
 $(document).on("click", "#package7", function(e) {
